@@ -16,4 +16,18 @@ using ODE
         @test isapprox(hnew, 2*0.01)
         @test retry == false
     end
+
+    @testset "evolve tests" begin
+        x0 = 0.0
+        y0 = [1.0]
+        x1 = 1.0
+
+        function exp_rhs(x, y)
+            return [-y[1]]
+        end
+
+        y1 = evolve_ode(Midpoint, exp_rhs, x0, y0, x1; atol=1e-4)
+
+        @test abs(y1[1] - exp(-1)) < 1e-3
+    end
 end
