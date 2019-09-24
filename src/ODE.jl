@@ -90,7 +90,7 @@ function step_midpoint(f_rhs, x, y, h)
     (y_new, yerr)
 end
 
-Midpoint = Stepper(3, step_midpoint)
+Midpoint = Stepper(2, step_midpoint)
 
 
 end # module
