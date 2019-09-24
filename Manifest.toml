@@ -75,6 +75,14 @@ version = "1.20.0"
 deps = ["Markdown"]
 uuid = "b77e0a4c-d291-57a0-90e8-8db25a27a240"
 
+[[Interpolation]]
+deps = ["Test"]
+git-tree-sha1 = "74079fba4e0bb2744a4e3e86febd9f279f23be17"
+repo-rev = "master"
+repo-url = "https://github.com/Farr-PHY-604/Interpolation.jl.git"
+uuid = "2eb8bd3d-4ed5-451c-82ee-dcf55ee37273"
+version = "0.1.0"
+
 [[JSON]]
 deps = ["Dates", "Mmap", "Parsers", "Unicode"]
 git-tree-sha1 = "b34d7cef7b337321e97d22242c3c2b91f476748e"
